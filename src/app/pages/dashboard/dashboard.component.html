@@ -1,0 +1,11 @@
+<div>
+
+
+  <button class="p-4 bg-cyan-300 rounded-lg" (click)="mark('ikaw na ang tunay na kasama')">Press me</button>
+  <br>
+  <p>{{ markAce }}</p>
+
+  @for (apo of apol; track apo) {
+   <p> {{ apo.name }} </p>
+  }
+</div>

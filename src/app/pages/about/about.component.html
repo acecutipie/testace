@@ -1,0 +1,27 @@
+<div>
+  <h1 class="text-9xl">About</h1>
+  <form class="p-3 gap-24 border w-80" [formGroup]="aceForm" (ngSubmit)="onSubmit()">
+    <div>
+      <label for="firstname">Firstname</label>
+      <input [formControl]="aceForm.controls.firstName" type="text" id="firstname" class="ml-2 border rounded">
+    </div>
+
+    <div>
+      <label for="lastname">Lastname</label>
+      <input [formControl]="aceForm.controls.lastName" type="text" id="lastname" class="ml-2 border rounded">
+    </div>
+
+    <div>
+      <label for="age">Age</label>
+      <input [formControl]="aceForm.controls.age" type="text" id="age" class="ml-2 border rounded">
+    </div>
+    <div>
+      <button type="submit" class="border p-2 rounded-md bg-green-500 text-white w-full">Submit</button>
+    </div>
+  </form>
+
+  <p>{{ firstname }}</p>
+  <p>{{ lastname }}</p>
+  <p>{{ age }}</p>
+
+</div>
